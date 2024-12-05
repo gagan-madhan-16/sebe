@@ -10,10 +10,7 @@ const { ObjectId } = require('mongodb');
 
 router.use(cookieParser());
 
-router.use(cors({
-  origin: 'http://localhost:5173', // frontend origin
-  credentials: true, // Allow cookies to be sent and received
-}));
+router.use(cors());
 
 const errorHandler = (err, req, res, next) => {
   console.error(err.stack);
