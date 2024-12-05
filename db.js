@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { string } = require("zod");
 
-mongoose.connect("mongodb://localhost:27017");
+mongoose.connect("mongodb+srv://percyj114:percyj114@cluster0.bagyf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 const UserSchema = new mongoose.Schema({
   firstName: {
